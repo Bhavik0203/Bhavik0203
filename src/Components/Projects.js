@@ -18,6 +18,102 @@ const Projects = () => {
   // Project data in a single array for easy mapping
   const projectsData = [
     {
+      name: "Realtra Spaces",
+      photo: CFRE,
+      description: "Realtra Spaces - Redefining Commercial Real Estate. A comprehensive platform that makes commercial real estate easy, transparent, and growth-focused. Features property listings, developer connections, and smart investment tools.",
+      github: "",
+      website: "https://realtraspaces.com/",
+      company: "DTG"
+    },
+    {
+      name: "Realtra Spaces Dashboard",
+      photo: CFRE,
+      description: "Realtra Spaces Dashboard - A powerful admin dashboard for managing commercial real estate operations, properties, inquiries, and client communications.",
+      github: "",
+      website: "https://realtraspaces.com/dashboard",
+      company: "DTG"
+    },
+    {
+      name: "Accountants Tech Labs",
+      photo: klas,
+      description: "Complete software suite for Public Accountants and Corporate Financial Professionals. All-in-one platform for compliance, audit, financial management, and analytics with enterprise-grade security and scalability.",
+      github: "",
+      website: "https://accountantstechlabs.com/",
+      company: "DTG"
+    },
+    {
+      name: "Accountants Tech Labs Dashboard",
+      photo: klas,
+      description: "Accountants Tech Labs Dashboard - Centralized platform for managing compliance inbox, audit flow, financial statements, and analytics for accounting professionals.",
+      github: "",
+      website: "",
+      company: "DTG"
+    },
+    {
+      name: "KSE USE E-invoicing Landing Page",
+      photo: build,
+      description: "KSE USE E-invoicing Landing Page - A modern landing page for electronic invoicing solutions, showcasing features and benefits of the e-invoicing platform.",
+      github: "",
+      website: "https://kse-use-e-invoicing-landing-page.vercel.app/",
+      company: "DTG"
+    },
+    {
+      name: "KLAS Aviation",
+      photo: elite24,
+      description: "KLAS Aviation - Efficiency with Elegance. Managing a fleet of private jets, providing end-to-end private aviation services with focus on safety, comfort, and seamless operations.",
+      github: "",
+      website: "https://klas-aviation.vercel.app/",
+      company: "DTG"
+    },
+    {
+      name: "Divine Mentors Landing",
+      photo: greeks,
+      description: "Divine Mentors Landing Page - A platform showcasing mentorship services and connecting mentors with mentees in various fields of expertise.",
+      github: "",
+      website: "https://landing-page.divinementors.com/",
+      company: "DTG"
+    },
+    {
+      name: "Divine Mentors Dashboard",
+      photo: greeks,
+      description: "Divine Mentors Dashboard - Admin dashboard for managing mentorship programs, mentor-student relationships, schedules, and tracking progress.",
+      github: "",
+      website: "https://landing-page.divinementors.com/dashboard",
+      company: "DTG"
+    },
+    {
+      name: "Mac & Ross",
+      photo: affluentinterio,
+      description: "Mac & Ross - Professional services platform. Coming soon with advanced features for business management and client services.",
+      github: "",
+      website: "https://mac-n-ross-frontend-v4c2.vercel.app/",
+      company: "Coming Soon"
+    },
+    {
+      name: "KLAS Group",
+      photo: klas,
+      description: "KLAS Group - Creating enduring value through strategic investments, innovation, and long-term partnerships. A diversified group with deep roots in Real Estate, Capital Markets, Technology, Aviation, and Entertainment.",
+      github: "",
+      website: "https://klas-group-p7t7.vercel.app/",
+      company: "Coming Soon"
+    },
+    {
+      name: "The Pawnavillas",
+      photo: build,
+      description: "The Pawnavillas - A premium real estate platform showcasing luxury villas and residential properties with modern design and intuitive user experience.",
+      github: "",
+      website: "https://thepawnavillas.com/",
+      company: "DTG"
+    },
+    {
+      name: "Codename Prakriti",
+      photo: roi,
+      description: "Codename Prakriti - An innovative platform showcasing sustainable and eco-friendly solutions with modern design and user-centric approach.",
+      github: "",
+      website: "https://codenameprakriti.com/",
+      company: "DTG"
+    },
+    {
       name: "Property Droneghjhghjgjhjh",
       photo: drone, 
       description: "Property Drone Website Built with Next.js and styled using Tailwind CSS.",
@@ -120,25 +216,27 @@ const Projects = () => {
   const ProjectBox = ({ project }) => {
     return ( 
       <div className='projectBox'> 
-        <img className='projectPhoto' src={project.photo} alt={`${project.name} project display`} /> 
-        <div>
-          <br />
-          <h3>{project.name} ( {project.company} ) </h3>
-          <br />
-          {project.description}
-          <br />
-
-          {project.github && (
-            <a href={project.github} target='_blank' rel="noreferrer">
-              <button className='projectbtn'><FaGithub/> Github</button>
-            </a>
-          )}
-
-          {project.website && (
-            <a href={project.website} target='_blank' rel="noreferrer">
-              <button className='projectbtn'><CgFileDocument/> Demo</button>
-            </a>
-          )}
+        <div className='projectImageContainer'>
+          <img className='projectPhoto' src={project.photo} alt={`${project.name} project display`} /> 
+        </div>
+        <div className='projectContent'>
+          <div className='projectHeader'>
+            <h3 className='projectTitle'>{project.name}</h3>
+            <span className='projectCompany'>{project.company}</span>
+          </div>
+          <p className='projectDescription'>{project.description}</p>
+          <div className='projectButtons'>
+            {project.github && (
+              <a href={project.github} target='_blank' rel="noreferrer">
+                <button className='projectbtn'><FaGithub/> Github</button>
+              </a>
+            )}
+            {project.website && (
+              <a href={project.website} target='_blank' rel="noreferrer">
+                <button className='projectbtn'><CgFileDocument/> Demo</button>
+              </a>
+            )}
+          </div>
         </div>
       </div>
     );

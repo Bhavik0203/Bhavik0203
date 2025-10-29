@@ -393,50 +393,162 @@ b{
 }
 
 .project{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 25px 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 80rem;
+  margin: 25px auto;
 }
 
 .projectBox{
-  width: 350px;
-  border: 3px solid #431f47;
-  border-radius: 5px;
-  text-align: center;
-  padding: 15px;
-  letter-spacing: 0.5px;
-  font-size: 18px;
-  line-height: 22px;
-  
-  margin: 0px 25px 50px 25px;
-  transition: 0.5s;
+  width: 100%;
+  background-color: #01111a;
+  border: 2px solid #431f47;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  height: 100%;
 }
 .projectBox:hover{
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px 0 #431f47;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(67, 31, 71, 0.4);
+  border-color: #9067C6;
+}
+
+.projectImageContainer{
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  background-color: #031926;
+  position: relative;
 }
 
 .projectPhoto{
-  display: block;
   width: 100%;
-  margin: 20px 0px;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projectBox:hover .projectPhoto{
+  transform: scale(1.1);
+}
+
+.projectContent{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 12px;
+}
+
+.projectHeader{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.projectTitle{
+  font-size: 20px;
+  font-weight: 600;
+  color: #E7E7E7;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.projectCompany{
+  font-size: 14px;
+  color: #9067C6;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.projectDescription{
+  font-size: 15px;
+  line-height: 1.6;
+  color: #c2c1c2;
+  margin: 0;
+  flex-grow: 1;
+  letter-spacing: 0.3px;
+}
+
+.projectButtons{
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  flex-wrap: wrap;
 }
 
 .projectbtn{
-  font-size: 20px;
+  font-size: 16px;
   display: inline-flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 40%;
-  margin: 25px 3% 0;
-  border-radius: 5px;
+  justify-content: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 120px;
+  padding: 10px 16px;
+  border-radius: 8px;
   background-color: #431f47;
   color: #E7E7E7;
-  height: 30px;
-  cursor:pointer;
+  cursor: pointer;
   text-decoration: none;
-  border-style: none;
+  border: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.projectbtn:hover{
+  background-color: #9067C6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(144, 103, 198, 0.3);
+}
+
+@media(max-width: 1024px){
+  .project{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px 3%;
+  }
+}
+
+@media(max-width: 768px){
+  .project{
+    grid-template-columns: 1fr;
+    margin: 25px 5%;
+  }
+  
+  .projectImageContainer{
+    height: 240px;
+  }
+  
+  .projectContent{
+    padding: 16px;
+  }
+  
+  .projectTitle{
+    font-size: 18px;
+  }
+  
+  .projectDescription{
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 500px){
+  .project{
+    margin: 25px 3%;
+  }
+  
+  .projectButtons{
+    flex-direction: column;
+  }
+  
+  .projectbtn{
+    width: 100%;
+  }
 }
 
 
