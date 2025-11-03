@@ -10,6 +10,8 @@ import MoveToTop from "./Components/MoveToTop";
 import Lottie from  "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
+import Design from "./Components/design";
+
 
 
 function App() {
@@ -49,7 +51,9 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/About" element={<About/>}/>
         <Route path="/Project" element={<Project/>}/>
+        <Route path="/Design" element={<Design/>}/>
         <Route path="/Resume" element={<Resume/>}/>
+       
       </Routes>
       
       <Footer/>
