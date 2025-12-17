@@ -5,7 +5,7 @@
 
 | 🌱 Currently Learning | 🤝 Open to Collaborate | 💻 Tech Stack | 🌐 Connect With Me |
 |----------------------|--------------------------|--------------|------------------|
-| • Advanced Next.js & React patterns<br>• TypeScript best practices for large projects<br>• Database optimization & system design | • Open-source projects<br>• Full-stack web apps<br>• Problem-solving & innovative ideas | **Frontend:** React, Next.js, TypeScript, JavaScript<br>**Backend:** Node.js, Express<br>**Database:** MySQL, MongoDB<br>**Tools:** Git, GitHub, Postman, Figma | • [LinkedIn](https://www.linkedin.com/in/bhavik-balpande/)<br>• [GitHub](https://github.com/Bhavik0203)<br>• bhavik.developer02@gmail.com |
+| • Advanced Next.js & React patterns<br>• TypeScript best practices for large projects<br>• Database optimization & system design | • Open-source projects<br>• Full-stack web apps<br>• Problem-solving & innovative ideas | **Frontend:** React, Next.js, TypeScript, JavaScript<br>**Backend:** Node.js, Express<br>**Database:** MySQL, MongoDB<br>**Tools:** Git, GitHub, Postman, Figma | [LinkedIn](https://www.linkedin.com/in/bhavik-balpande/)<br>[Insta](https://www.instagram.com/_mr_freaky_02)<br>bhavik.developer02@gmail.com |
 
 
 ### 📊 GitHub Stats
@@ -15,6 +15,7 @@
 ---
 
 ✨ *Code. Learn. Build. Repeat.*
+
 
 
 
