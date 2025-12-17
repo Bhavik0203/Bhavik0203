@@ -5,33 +5,14 @@
 
 ---
 
-### 👨‍💻 What I Do
-- Build modern web apps using **React, Next.js & Node.js**
-- Design clean, responsive UIs with **Tailwind CSS**
-- Develop secure REST APIs & scalable databases (**MySQL, MongoDB**)
-- Focus on **performance, clean code & real-world solutions**
+| 🌱 Currently Learning | 🤝 Open to Collaborate On |
+|----------------------|--------------------------|
+| • Advanced Next.js & React patterns<br>• TypeScript best practices for large projects<br>• Database optimization & system design | • Open-source projects<br>• Full-stack web apps<br>• Problem-solving & innovative ideas |
 
----
+| 💻 Tech Stack | 🌐 Connect With Me |
+|--------------|------------------|
+| **Frontend:** React, Next.js, TypeScript, JavaScript<br>**Backend:** Node.js, Express<br>**Database:** MySQL, MongoDB<br>**Tools:** Git, GitHub, Postman, Figma | • [LinkedIn](https://www.linkedin.com/in/bhavik-balpande/)<br>• [GitHub](https://github.com/Bhavik0203)<br>• 📧 bhavik.developer02@gmail.com |
 
-### 🌱 Currently Learning
-- Advanced **Next.js & React patterns**
-- **TypeScript** best practices for large projects
-- Database optimization & system design
-
----
-
-### 🤝 Open to Collaborate On
-- Open-source projects
-- Full-stack web apps
-- Problem-solving & innovative ideas
-
----
-
-### 💻 Tech Stack
-**Frontend:** React, Next.js, TypeScript, JavaScript  
-**Backend:** Node.js, Express  
-**Database:** MySQL, MongoDB  
-**Tools:** Git, GitHub, Postman, Figma  
 
 ---
 
@@ -49,4 +30,5 @@
 ---
 
 ✨ *Code. Learn. Build. Repeat.*
+
 
